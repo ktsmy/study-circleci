@@ -8,6 +8,8 @@ workflows:
         jobs:
           - hello/hello-build
           - build
+              requires:
+                - hello/hello-build
 
 jobs:
   build:
