@@ -7,7 +7,7 @@ workflows:
     "Hello Workflow":
         jobs:
           - hello/hello-build
-          - build
+          - build:
               requires:
                 - hello/hello-build
 
